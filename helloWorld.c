@@ -62,17 +62,54 @@
 
 //     return 0;
 // }
+// #include <stdio.h>
+// #include <math.h>
+
+// int main(){
+//     const double PI=3.14154;
+//     double radius;
+//     double circumference;
+//     double area;
+//     printf("Enter your radius : ");
+//     scanf("%lf", &radius);
+//     circumference=2 * PI* radius;
+
+//     printf("\n Your circumference is %lf",circumference);
+// }
+
+// #include <stdio.h>
+// #include <math.h>
+// int main(){
+//     int age;
+//     printf("What's your age?\n");
+// scanf("%d",&age);
+//     if(age>=21){
+//         printf("You have permission to watch all categories\n");
+//     }
+//     else if(age>=18){
+//         printf("You have permission to watch but some categories are not available\n");
+//     }else if(age<18){
+//         printf("You don't have permission to watch\n");
+//     }
+// }
 #include <stdio.h>
-#include <math.h>
-
 int main(){
-    const double PI=3.14154;
-    double radius;
-    double circumference;
-    double area;
-    printf("Enter your radius : ");
-    scanf("%lf", &radius);
-    circumference=2 * PI* radius;
+    char grade;
+    printf("Pls enter your grade!\n");
+    scanf("%s",&grade);
 
-    printf("\n Your circumference is %lf",circumference);
+switch (grade)
+{
+    case 'A':printf("Perfect!");
+    break;
+    case 'B':printf("Good!");
+    break;
+    case 'C':printf("Normal!");
+    break;
+    case 'D':printf("Fail");
+    break;
+default:printf("Pls fill valid Grade");
+
+    break;
+}
 }

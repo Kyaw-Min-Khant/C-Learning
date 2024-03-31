@@ -92,24 +92,50 @@
 //         printf("You don't have permission to watch\n");
 //     }
 // }
+// #include <stdio.h>
+// int main(){
+//     char grade;
+//     printf("Pls enter your grade!\n");
+//     scanf("%s",&grade);
+
+// switch (grade)
+// {
+//     case 'A':printf("Perfect!");
+//     break;
+//     case 'B':printf("Good!");
+//     break;
+//     case 'C':printf("Normal!");
+//     break;
+//     case 'D':printf("Fail");
+//     break;
+// default:printf("Pls fill valid Grade");
+//     break;
+// }
+// }
+
+
+#include <ctype.h>
 #include <stdio.h>
 int main(){
-    char grade;
-    printf("Pls enter your grade!\n");
-    scanf("%s",&grade);
+    char unit;
+    float temp;
 
-switch (grade)
-{
-    case 'A':printf("Perfect!");
-    break;
-    case 'B':printf("Good!");
-    break;
-    case 'C':printf("Normal!");
-    break;
-    case 'D':printf("Fail");
-    break;
-default:printf("Pls fill valid Grade");
+    printf("Is the temperature  in (F) or (C)?\n");
+    scanf("%c",&unit);
+    unit=toupper(unit);
+    if(unit=='C'){
+    printf("Temperature is Celsius\n");
+            temp=(temp*9/5)+32;
+            printf("The Temperature in Celsius is : %f",temp);
 
-    break;
-}
+    }else if(unit=='F'){
+        printf("\nPls Enter Farenheit No :");
+        scanf("%f",&temp);
+         temp=((temp-32)*5)/9;
+printf("The Temperature in Farenheit is : %f",temp);
+
+    }else
+    {
+        printf("Invalid Temperature Unit\n");
+    }
 }

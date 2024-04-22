@@ -114,28 +114,67 @@
 // }
 
 
-#include <ctype.h>
-#include <stdio.h>
-int main(){
-    char unit;
-    float temp;
+// #include <ctype.h>
+// #include <stdio.h>
+// int main(){
+//     char unit;
+//     float temp;
 
-    printf("Is the temperature  in (F) or (C)?\n");
-    scanf("%c",&unit);
-    unit=toupper(unit);
-    if(unit=='C'){
-    printf("Temperature is Celsius\n");
-            temp=(temp*9/5)+32;
-            printf("The Temperature in Celsius is : %f",temp);
+//     printf("Is the temperature  in (F) or (C)?\n");
+//     scanf("%c",&unit);
+//     unit=toupper(unit);
+//     if(unit=='C'){
+//     printf("Temperature is Celsius\n");
+//             temp=(temp*9/5)+32;
+//             printf("The Temperature in Celsius is : %f",temp);
 
-    }else if(unit=='F'){
-        printf("\nPls Enter Farenheit No :");
-        scanf("%f",&temp);
-         temp=((temp-32)*5)/9;
-printf("The Temperature in Farenheit is : %f",temp);
+//     }else if(unit=='F'){
+//         printf("\nPls Enter Farenheit No :");
+//         scanf("%f",&temp);
+//          temp=((temp-32)*5)/9;
+// printf("The Temperature in Farenheit is : %f",temp);
 
-    }else
-    {
-        printf("Invalid Temperature Unit\n");
-    }
-}
+//     }else
+//     {
+//         printf("Invalid Temperature Unit\n");
+//     }
+// }
+
+// #include <stdio.h>
+// void birthday(){
+//     printf("Happy Birthday ...\n");
+//     printf("Happy Birthday to you ....\n");
+//     printf("Happy Birthday to you ...\n");
+// }
+// int main(){
+//     birthday();
+//     return 0;
+// }
+// #include <stdio.h>
+// void Myself(char name[],int age){
+//     printf("Hello,I am %s",name);
+//     printf("Age is %d",age);
+// }
+
+// int main(){
+//     char name[]="Arr Krr";
+//     int age=21;
+//     Myself(name,age);
+//     return 1;
+// }
+
+// #include <stdio.h>
+// int findMax();
+// int main(){
+// int num=findMax();
+// printf("The number is %d",num);
+// }
+// int findMax(){
+//   int x;
+//   int y;
+//   printf("X value is ");
+//   scanf("%d",&x);
+//   printf("\nY value is ");
+//   scanf("%d",&y);
+//   return x*y;
+// }
